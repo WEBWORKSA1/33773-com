@@ -1,0 +1,14 @@
+title: 33773 Homefront
+description: Storm prep, insurance, property tax and local quotes for ZIP 33773, Largo, Florida.
+url: https://33773.com
+plugins:
+  - jekyll-sitemap
+exclude:
+  - README.md
+  - PROMPTS.md
+  - .gitignore
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default

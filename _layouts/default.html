@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.url == '/' or page.title contains '33773' %}{{ page.title | escape }}{% else %}{{ page.title | escape }} | 33773 Homefront{% endif %}</title>
+<meta name="description" content="{{ page.description | escape }}">
+<link rel="canonical" href="https://33773.com{{ page.url }}">
+<meta name="robots" content="{% if page.noindex %}noindex,follow{% else %}index,follow,max-image-preview:large{% endif %}">
+<meta name="theme-color" content="#0E3B4A">
+<meta property="og:type" content="{% if page.type == 'article' %}article{% else %}website{% endif %}">
+<meta property="og:site_name" content="33773 Homefront">
+<meta property="og:title" content="{{ page.title | escape }}">
+<meta property="og:description" content="{{ page.description | escape }}">
+<meta property="og:url" content="https://33773.com{{ page.url }}">
+<meta name="twitter:card" content="summary">
+<meta name="google-adsense-account" content="ca-pub-6620975821265271">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6620975821265271" crossorigin="anonymous"></script>
+<link rel="icon" href="{{ site.baseurl }}/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="{{ site.baseurl }}/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/site.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"33773 Homefront","url":"https://33773.com/"}</script>
+{% if page.type == 'article' %}<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":{{ page.title | jsonify }},"description":{{ page.description | jsonify }},"dateModified":"{{ site.time | date: '%Y-%m-%d' }}","mainEntityOfPage":"https://33773.com{{ page.url }}","author":{"@type":"Organization","name":"33773 Homefront editors"},"publisher":{"@type":"Organization","name":"33773.com"}}</script>{% endif %}
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="ownerbar"><a href="https://web.works/contact" target="_blank" rel="noopener"><strong>Contact</strong>, if you are interested in this website / domain name / sponsorship / advertisement / partnership</a></div>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="{{ site.baseurl }}/index.html" aria-label="33773 Homefront home"><span class="brand-num">33773</span><span class="brand-name">Homefront</span></a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="{{ site.baseurl }}/storm-ready.html"{% if page.nav == 'storm' %} aria-current="page"{% endif %}>Storm ready</a>
+      <a href="{{ site.baseurl }}/guides/index.html"{% if page.nav == 'guides' %} aria-current="page"{% endif %}>Guides</a>
+      <a href="{{ site.baseurl }}/tools.html"{% if page.nav == 'tools' %} aria-current="page"{% endif %}>Tools</a>
+      <a href="{{ site.baseurl }}/zip-33773.html"{% if page.nav == 'zip' %} aria-current="page"{% endif %}>ZIP profile</a>
+      <a href="{{ site.baseurl }}/local.html"{% if page.nav == 'local' %} aria-current="page"{% endif %}>Local</a>
+      <a href="{{ site.baseurl }}/videos.html"{% if page.nav == 'videos' %} aria-current="page"{% endif %}>Videos</a>
+      <a href="{{ site.baseurl }}/contests.html"{% if page.nav == 'contests' %} aria-current="page"{% endif %}>Contests</a>
+      <a href="{{ site.baseurl }}/support.html"{% if page.nav == 'support' %} aria-current="page"{% endif %}>Support</a>
+      <a class="btn btn-go" href="{{ site.baseurl }}/get-quotes.html">Get local quotes</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+{{ content }}</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="{{ site.baseurl }}/index.html"><span class="brand-num">33773</span><span class="brand-name">Homefront</span></a>
+        <p class="muted" style="margin-top:10px">An independent guide for homes and households in ZIP 33773, Largo, Pinellas County, Florida. Storm prep, insurance, property tax and local life, explained plainly.</p>
+        <form class="form" data-form="newsletter" data-ok="You're on the list. Storm-season updates arrive when they matter, not daily.">
+          <label class="field"><span class="vh">Email for storm-season updates</span>
+          <div class="nl"><input type="email" name="email" required placeholder="Email for storm-season updates" autocomplete="email"><button class="btn btn-go" type="submit">Subscribe</button></div></label>
+          <div class="hp"><input name="_hp" tabindex="-1" autocomplete="off"></div>
+          <input type="hidden" name="form" value="Newsletter signup">
+          <div class="form-msg" role="status"></div>
+        </form>
+      </div>
+      <div>
+        <h4>Prepare</h4>
+        <ul>
+          <li><a href="{{ site.baseurl }}/storm-ready.html">Storm-ready hub</a></li>
+          <li><a href="{{ site.baseurl }}/guides/hurricane-prep-checklist.html">Hurricane checklist</a></li>
+          <li><a href="{{ site.baseurl }}/guides/flood-insurance-largo.html">Flood insurance</a></li>
+          <li><a href="{{ site.baseurl }}/guides/after-the-storm-insurance-claims.html">After the storm</a></li>
+          <li><a href="{{ site.baseurl }}/tools.html">Calculators</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Home &amp; money</h4>
+        <ul>
+          <li><a href="{{ site.baseurl }}/guides/florida-homeowners-insurance.html">Homeowners insurance</a></li>
+          <li><a href="{{ site.baseurl }}/guides/homestead-exemption-pinellas.html">Homestead exemption</a></li>
+          <li><a href="{{ site.baseurl }}/guides/my-safe-florida-home.html">My Safe Florida Home</a></li>
+          <li><a href="{{ site.baseurl }}/guides/roof-replacement-florida.html">Roofs &amp; insurance</a></li>
+          <li><a href="{{ site.baseurl }}/get-quotes.html">Get local quotes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>33773.com</h4>
+        <ul>
+          <li><a href="{{ site.baseurl }}/about.html">About</a></li>
+          <li><a href="{{ site.baseurl }}/contact.html">Contact</a></li>
+          <li><a href="{{ site.baseurl }}/advertise.html">Advertise &amp; partner</a></li>
+          <li><a href="{{ site.baseurl }}/careers.html">Work with us</a></li>
+          <li><a href="{{ site.baseurl }}/support.html">Support the site</a></li>
+          <li><a href="{{ site.baseurl }}/privacy.html">Privacy &amp; cookies</a></li>
+          <li><a href="{{ site.baseurl }}/terms.html">Terms of use</a></li>
+          <li><a href="{{ site.baseurl }}/disclaimer.html">Disclaimer &amp; trademarks</a></li>
+          <li><a href="{{ site.baseurl }}/sitemap.html">Site map</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <p><strong>Trademark &amp; copyright notice.</strong> "33773" is a five-digit number and a United States Postal Service ZIP Code; no claim of exclusive rights in the number is made, and this site is not affiliated with USPS, the City of Largo, Pinellas County, the State of Florida, FEMA, NOAA or any insurer. Third-party names and logos belong to their owners and are used only to identify them. Site text, design and tools &copy; <span data-year></span> 33773.com. All rights reserved.</p>
+      <p>Information here is general and educational, not insurance, legal, tax or financial advice. Verify details with the official source linked on each page. Some pages may contain advertising; see <a href="{{ site.baseurl }}/disclaimer.html">Disclaimer</a> and <a href="{{ site.baseurl }}/privacy.html">Privacy</a>.</p>
+    </div>
+  </div>
+</footer>
+{% unless page.sticky == 'no' %}<div class="sticky-cta"><a class="btn btn-go btn-block" href="{{ site.baseurl }}/get-quotes.html">Get 3 local quotes, free</a></div>{% endunless %}
+<div class="cookie" role="dialog" aria-label="Cookies notice">
+  <strong>Cookies and ads.</strong> We use cookies to run the site, measure traffic and show ads through Google AdSense, which may personalise ads. <a href="{{ site.baseurl }}/privacy.html">Read how</a>.
+  <div class="row"><button class="btn btn-go" data-cookie="all">Accept</button><button class="btn btn-line" data-cookie="essential">Essential only</button></div>
+</div>
+<script src="{{ site.baseurl }}/assets/js/config.js"></script>
+<script src="{{ site.baseurl }}/assets/js/main.js" defer></script>
+</body>
+</html>
