@@ -1,0 +1,75 @@
+---
+layout: default
+title: "Free calculators for Largo homeowners | Storm kit, PITI, homestead, flood risk"
+description: "Four free tools for ZIP 33773: storm kit calculator, true monthly home cost with wind and flood insurance, Pinellas homestead savings estimate and a flood-risk self-check."
+nav: "tools"
+---
+<section class="hero">
+  <div class="wrap">
+    <p class="crumbs"><a href="index.html">Home</a> / Tools</p>
+    <h1>Calculators that answer the real questions.</h1>
+    <p class="lede">Each tool runs in your browser. Nothing you type is sent anywhere unless you choose to request quotes.</p>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap grid g2" style="align-items:start">
+    <div class="tool" id="kit">
+      <h2>Storm kit calculator</h2>
+      <p>Based on the Ready.gov guideline of one gallon of water per person per day. We add half a gallon per pet.</p>
+      <form id="kit-calc" class="grid g3" onsubmit="return false">
+        <div class="field"><label for="k-people">People</label><input id="k-people" type="number" min="1" max="20" value="2"></div>
+        <div class="field"><label for="k-pets">Pets</label><input id="k-pets" type="number" min="0" max="10" value="1"></div>
+        <div class="field"><label for="k-days">Days</label><input id="k-days" type="number" min="3" max="21" value="7"></div>
+      </form>
+      <div class="out grid g2">
+        <div><div class="muted small">Water</div><div class="big" id="k-water">–</div></div>
+        <div><div class="muted small">Meals</div><div class="big" id="k-meals">–</div></div>
+        <div><div class="muted small">Prescription supply</div><b id="k-meds">–</b></div>
+        <div><div class="muted small">Cash on hand</div><b id="k-cash">–</b></div>
+      </div>
+    </div>
+
+    <div class="tool" id="piti">
+      <h2>True monthly cost of a home</h2>
+      <p>In Pinellas, insurance can rival principal and interest. Enter your own quotes for accuracy.</p>
+      <form id="mort-calc" class="grid g2" onsubmit="return false">
+        <div class="field"><label for="m-price">Home price ($)</label><input id="m-price" type="number" min="0" step="1000" value="320000"></div>
+        <div class="field"><label for="m-down">Down payment ($)</label><input id="m-down" type="number" min="0" step="1000" value="64000"></div>
+        <div class="field"><label for="m-rate">Interest rate (%)</label><input id="m-rate" type="number" min="0" max="20" step="0.05" value="6.5"></div>
+        <div class="field"><label for="m-years">Term (years)</label><input id="m-years" type="number" min="5" max="40" value="30"></div>
+        <div class="field"><label for="m-tax">Property tax ($/yr)</label><input id="m-tax" type="number" min="0" step="100" value="4800"></div>
+        <div class="field"><label for="m-ins">Home &amp; wind insurance ($/yr)</label><input id="m-ins" type="number" min="0" step="100" value="4000"></div>
+        <div class="field"><label for="m-flood">Flood insurance ($/yr)</label><input id="m-flood" type="number" min="0" step="50" value="900"></div>
+        <div class="field"><label for="m-hoa">HOA ($/mo)</label><input id="m-hoa" type="number" min="0" step="10" value="0"></div>
+      </form>
+      <div class="out"><div class="muted small">Estimated monthly payment</div><div class="big" id="m-total">–</div><p class="small mb0" id="m-break"></p></div>
+      <p class="small muted" style="margin-top:10px">Defaults are illustrative, not quotes. <a href="get-quotes.html?service=Homeowners%20insurance">Get real insurance quotes</a>.</p>
+    </div>
+
+    <div class="tool" id="homestead">
+      <h2>Homestead savings estimate</h2>
+      <p>Pinellas homesteads get up to $51,411 off assessed value: $25,000 against all taxes and up to $26,411 more against non-school taxes. Find your millage rates on your TRIM notice.</p>
+      <form id="home-calc" class="grid g3" onsubmit="return false">
+        <div class="field"><label for="h-av">Assessed value ($)</label><input id="h-av" type="number" min="0" step="1000" value="250000"></div>
+        <div class="field"><label for="h-mills">Total millage</label><input id="h-mills" type="number" min="0" step="0.1" value="18"><div class="hint">Mills = $ per $1,000</div></div>
+        <div class="field"><label for="h-school">School millage</label><input id="h-school" type="number" min="0" step="0.1" value="5.5"></div>
+      </form>
+      <div class="out"><div class="muted small">Estimated yearly savings</div><div class="big" id="h-save">–</div><p class="small mb0" id="h-detail"></p></div>
+      <p class="small muted" style="margin-top:10px">Example millage values only. Save Our Homes caps also limit future assessment growth. <a href="guides/homestead-exemption-pinellas.html">Read the homestead guide</a>.</p>
+    </div>
+
+    <div class="tool" id="flood">
+      <h2>Flood-risk self-check</h2>
+      <p>Five questions. Not a substitute for the FEMA flood map, but a fast way to decide whether to price a policy.</p>
+      <form id="risk-quiz" class="form" onsubmit="return false">
+        <div><span class="legend">Has water ever reached your yard, garage or street?</span><label class="check"><input type="radio" name="r1" value="2"> Yes</label><label class="check"><input type="radio" name="r1" value="0"> No</label></div>
+        <div><span class="legend">Are you within a few blocks of a creek, lake, canal or bayou?</span><label class="check"><input type="radio" name="r2" value="2"> Yes</label><label class="check"><input type="radio" name="r2" value="0"> No</label></div>
+        <div><span class="legend">Is your home slab-on-grade or below street level?</span><label class="check"><input type="radio" name="r3" value="1"> Yes</label><label class="check"><input type="radio" name="r3" value="0"> No / unsure</label></div>
+        <div><span class="legend">Does your FEMA map show an A or AE zone?</span><label class="check"><input type="radio" name="r4" value="3"> Yes</label><label class="check"><input type="radio" name="r4" value="0"> No / haven't checked</label></div>
+        <div><span class="legend">Did a 2024 storm flood homes on your street?</span><label class="check"><input type="radio" name="r5" value="2"> Yes</label><label class="check"><input type="radio" name="r5" value="0"> No</label></div>
+      </form>
+      <div class="out" id="risk-out" hidden><b></b><p class="mb0"></p><p class="mb0" style="margin-top:10px"><a class="btn btn-go" href="get-quotes.html?service=Flood%20insurance">Compare flood quotes</a> <a href="https://msc.fema.gov/portal/home" target="_blank" rel="noopener">Check the FEMA map</a></p></div>
+    </div>
+  </div>
+</section>
